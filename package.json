@@ -5,7 +5,7 @@
     "start": "react-static start",
     "start:lambda": "netlify-lambda serve src/lambda",
     "stage": "react-static build --staging",
-    "build": "react-static build",
+    "build": "react-static build && netlify-lambda build src/lambda",
     "build:lambda": "netlify-lambda build src/lambda",
     "analyze": "react-static build --analyze",
     "serve": "serve dist -p 3000"
